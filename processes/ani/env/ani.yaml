@@ -1,0 +1,7 @@
+channels:
+  - bioconda
+dependencies:
+  - MUMmer4=4.0.0
+  - mash=2.3
+  - perl
+  - perl-data-dumper

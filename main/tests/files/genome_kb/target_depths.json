@@ -1,0 +1,10 @@
+{
+    "DEFAULT": 100,
+    "SALMONELLA": 100,
+    "LISTERIA": 100,
+    "ESCHERICHIA": 100,
+    "VIBRIO": 100,
+    "CAMPYLOBACTER": 100,
+    "CLOSTRIDIUM": 100,
+    "Yersinia": 100
+}

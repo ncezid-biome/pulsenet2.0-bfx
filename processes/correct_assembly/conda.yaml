@@ -1,0 +1,9 @@
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - bwa=0.7.17
+  - samtools=1.16.1
+  - pilon=1.24
+  - bowtie2=2.5.0
+  - seqkit=0.10.1

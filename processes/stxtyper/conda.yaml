@@ -1,0 +1,9 @@
+name: stxtyper
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - poetry=1.8.2
+  - bioconda/label/broken::bowtie2=2.2.5
+  - samtools=1.19.2
+

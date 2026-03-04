@@ -1,0 +1,116 @@
+{
+    "AlleleCalling": {
+        "SALM": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Percentage of core loci is low.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 85
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "W",
+                        "value": [85,94]
+                    }
+                ]
+            }
+        ],
+        "LISTERIA_I": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 95
+                    }
+                ]
+            }
+        ],
+        "LISTERIA_II": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 95
+                    }
+                ]
+            }
+        ],
+        "LISTERIA_III": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 85
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "W",
+                        "value": [85,94]
+                    }
+                ]
+            }
+        ],
+        "LISTERIA_IV": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 85
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "W",
+                        "value": [85,94]
+                    }
+                ]
+            }
+        ],
+        "VIBRIO":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 95
+                    }
+                ]
+            }
+        ],
+        "VIBRIO VULNIFICUS":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ]
+            }
+        ]
+    }
+}

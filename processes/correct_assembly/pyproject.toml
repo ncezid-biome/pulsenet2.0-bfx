@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "ngs-pipeline-process-correct-assembly"
+version = "3.0.1"
+description = "Correct assembly module used by Pulsenet2.0 bioinformatics worflow"
+authors = ["Subin PARK, Sara CLELAND, Alyssa KELLEY, Alan COLLINS"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+boto3 = "^1.26.97"
+mypy-boto3-s3 = "^1.26.97.post1"
+ngs-pipeline-lib = "^4.6.0.1"
+biopython = "^1.81"
+
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^7.33.2"
+pytest = "^7.2.2"
+pytest-mock = "^3.10.0"
+black = "^23.1.0"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+# This is a temporary req due to https://github.com/docker/docker-py/issues/3113
+# When it's fixed in the docker lib, simply remove it and try to build a docker image
+requests = "<2.29.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = "src/__init__.py:__version__"
+version_toml = "pyproject.toml:tool.poetry.version"
+prerelease_tag = "pre"
+branch = "main"
+upload_to_repository = false
+commit_subject = "chore(release): ${version}"
+upload_to_release = false

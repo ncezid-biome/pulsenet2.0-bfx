@@ -1,0 +1,2561 @@
+{
+    "fastpThresholds": {
+        "SALMONELLA": [
+            {
+                "name": "Initial_Vertical_Depth",
+                "description": "Estimated vertical depth is low before read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "initialEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Post_Trimming_and_Subsampling_Vertical_Depth",
+                "description": "Estimated vertical depth is low after read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "postSubsamplingEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Combined Average Read Quality",
+                "description": "Combined trimmed reads QC score is low.",
+                "FAIL": [
+                    {
+                        "key": "trimmedCombinedAvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read1 Quality",
+                "description": "Trimmed read1 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead1AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read2 Quality",
+                "description": "Trimmed read2 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead2AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "name": "300 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "300 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 135
+                    }
+                ]
+            },
+            {
+                "name": "500 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "500 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 225
+                    }
+                ]
+            },
+            {
+                "name": "600 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "600 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 270
+                    }
+                ]
+            },
+            {
+                "name": "Non Standard Kit",
+                "description": "Cannot infer as 300, 500, or 600 cycle kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "Non Standard"
+                    }
+                ]
+            }
+        ],
+        "LISTERIA": [
+            {
+                "name": "Initial_Vertical_Depth",
+                "description": "Estimated vertical depth is low before read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "initialEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Post_Trimming_and_Subsampling_Vertical_Depth",
+                "description": "Estimated vertical depth is low after read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "postSubsamplingEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Combined Average Read Quality",
+                "description": "Combined trimmed reads QC score is low.",
+                "FAIL": [
+                    {
+                        "key": "trimmedCombinedAvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read1 Quality",
+                "description": "Trimmed read1 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead1AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read2 Quality",
+                "description": "Trimmed read2 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead2AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "name": "300 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "300 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 135
+                    }
+                ]
+            },
+            {
+                "name": "500 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "500 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 225
+                    }
+                ]
+            },
+            {
+                "name": "600 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "600 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 270
+                    }
+                ]
+            },
+            {
+                "name": "Non Standard Kit",
+                "description": "Cannot infer as 300, 500, or 600 cycle kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "Non Standard"
+                    }
+                ]
+            }
+        ],
+        "CAMPYLOBACTER": [
+            {
+                "name": "Initial_Vertical_Depth",
+                "description": "Estimated vertical depth is low before read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "initialEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Post_Trimming_and_Subsampling_Vertical_Depth",
+                "description": "Estimated vertical depth is low after read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "postSubsamplingEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Combined Average Read Quality",
+                "description": "Combined trimmed reads QC score is low.",
+                "FAIL": [
+                    {
+                        "key": "trimmedCombinedAvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read1 Quality",
+                "description": "Trimmed read1 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead1AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read2 Quality",
+                "description": "Trimmed read2 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead2AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "name": "300 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "300 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 135
+                    }
+                ]
+            },
+            {
+                "name": "500 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "500 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 225
+                    }
+                ]
+            },
+            {
+                "name": "600 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "600 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 270
+                    }
+                ]
+            },
+            {
+                "name": "Non Standard Kit",
+                "description": "Cannot infer as 300, 500, or 600 cycle kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "Non Standard"
+                    }
+                ]
+            }
+        ],
+        "ESCHERICHIA": [
+            {
+                "name": "Initial_Vertical_Depth",
+                "description": "Estimated vertical depth is low before read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "initialEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Post_Trimming_and_Subsampling_Vertical_Depth",
+                "description": "Estimated vertical depth is low after read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "postSubsamplingEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Combined Average Read Quality",
+                "description": "Combined trimmed reads QC score is low.",
+                "FAIL": [
+                    {
+                        "key": "trimmedCombinedAvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read1 Quality",
+                "description": "Trimmed read1 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead1AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read2 Quality",
+                "description": "Trimmed read2 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead2AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "name": "300 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "300 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 135
+                    }
+                ]
+            },
+            {
+                "name": "500 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "500 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 225
+                    }
+                ]
+            },
+            {
+                "name": "600 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "600 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 270
+                    }
+                ]
+            },
+            {
+                "name": "Non Standard Kit",
+                "description": "Cannot infer as 300, 500, or 600 cycle kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "Non Standard"
+                    }
+                ]
+            }
+        ],
+        "VIBRIO": [
+            {
+                "name": "Initial_Vertical_Depth",
+                "description": "Estimated vertical depth is low before read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "initialEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Post_Trimming_and_Subsampling_Vertical_Depth",
+                "description": "Estimated vertical depth is low after read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "postSubsamplingEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Combined Average Read Quality",
+                "description": "Combined trimmed reads QC score is low.",
+                "FAIL": [
+                    {
+                        "key": "trimmedCombinedAvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read1 Quality",
+                "description": "Trimmed read1 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead1AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read2 Quality",
+                "description": "Trimmed read2 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead2AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "name": "300 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "300 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 135
+                    }
+                ]
+            },
+            {
+                "name": "500 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "500 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 225
+                    }
+                ]
+            },
+            {
+                "name": "600 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "600 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 270
+                    }
+                ]
+            },
+            {
+                "name": "Non Standard Kit",
+                "description": "Cannot infer as 300, 500, or 600 cycle kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "Non Standard"
+                    }
+                ]
+            }
+        ], 
+        "CRONOBACTER": [
+            {
+                "name": "Initial_Vertical_Depth",
+                "description": "Estimated vertical depth is low before read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "initialEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Post_Trimming_and_Subsampling_Vertical_Depth",
+                "description": "Estimated vertical depth is low after read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "postSubsamplingEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Combined Average Read Quality",
+                "description": "Combined trimmed reads QC score is low.",
+                "FAIL": [
+                    {
+                        "key": "trimmedCombinedAvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read1 Quality",
+                "description": "Trimmed read1 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead1AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read2 Quality",
+                "description": "Trimmed read2 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead2AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "name": "300 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "300 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 135
+                    }
+                ]
+            },
+            {
+                "name": "500 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "500 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 225
+                    }
+                ]
+            },
+            {
+                "name": "600 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "600 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 270
+                    }
+                ]
+            },
+            {
+                "name": "Non Standard Kit",
+                "description": "Cannot infer as 300, 500, or 600 cycle kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "Non Standard"
+                    }
+                ]
+            }
+        ], 
+        "CLOSTRIDIUM": [
+            {
+                "name": "Initial_Vertical_Depth",
+                "description": "Estimated vertical depth is low before read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "initialEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Post_Trimming_and_Subsampling_Vertical_Depth",
+                "description": "Estimated vertical depth is low after read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "postSubsamplingEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Combined Average Read Quality",
+                "description": "Combined trimmed reads QC score is low.",
+                "FAIL": [
+                    {
+                        "key": "trimmedCombinedAvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read1 Quality",
+                "description": "Trimmed read1 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead1AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read2 Quality",
+                "description": "Trimmed read2 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead2AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "name": "300 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "300 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 135
+                    }
+                ]
+            },
+            {
+                "name": "500 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "500 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 225
+                    }
+                ]
+            },
+            {
+                "name": "600 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "600 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 270
+                    }
+                ]
+            },
+            {
+                "name": "Non Standard Kit",
+                "description": "Cannot infer as 300, 500, or 600 cycle kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "Non Standard"
+                    }
+                ]
+            }
+        ],
+        "YERSINIA": [
+            {
+                "name": "Initial_Vertical_Depth",
+                "description": "Estimated vertical depth is low before read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "initialEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Post_Trimming_and_Subsampling_Vertical_Depth",
+                "description": "Estimated vertical depth is low after read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "postSubsamplingEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Combined Average Read Quality",
+                "description": "Combined trimmed reads QC score is low.",
+                "FAIL": [
+                    {
+                        "key": "trimmedCombinedAvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read1 Quality",
+                "description": "Trimmed read1 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead1AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read2 Quality",
+                "description": "Trimmed read2 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead2AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "name": "300 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "300 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 135
+                    }
+                ]
+            },
+            {
+                "name": "500 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "500 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 225
+                    }
+                ]
+            },
+            {
+                "name": "600 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "600 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 270
+                    }
+                ]
+            },
+            {
+                "name": "Non Standard Kit",
+                "description": "Cannot infer as 300, 500, or 600 cycle kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "Non Standard"
+                    }
+                ]
+            }
+        ],
+        "GRIMONTIA": [
+            {
+                "name": "Initial_Vertical_Depth",
+                "description": "Estimated vertical depth is low before read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "initialEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Post_Trimming_and_Subsampling_Vertical_Depth",
+                "description": "Estimated vertical depth is low after read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "postSubsamplingEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Combined Average Read Quality",
+                "description": "Combined trimmed reads QC score is low.",
+                "FAIL": [
+                    {
+                        "key": "trimmedCombinedAvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read1 Quality",
+                "description": "Trimmed read1 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead1AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read2 Quality",
+                "description": "Trimmed read2 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead2AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "name": "300 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "300 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 135
+                    }
+                ]
+            },
+            {
+                "name": "500 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "500 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 225
+                    }
+                ]
+            },
+            {
+                "name": "600 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "600 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 270
+                    }
+                ]
+            },
+            {
+                "name": "Non Standard Kit",
+                "description": "Cannot infer as 300, 500, or 600 cycle kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "Non Standard"
+                    }
+                ]
+            }
+        ],
+        "PHOTOBACTERIUM": [
+            {
+                "name": "Initial_Vertical_Depth",
+                "description": "Estimated vertical depth is low before read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "initialEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Post_Trimming_and_Subsampling_Vertical_Depth",
+                "description": "Estimated vertical depth is low after read QC and subsampling.",
+                "FAIL": [
+                    {
+                        "key": "postSubsamplingEstimatedVerticalDepth",
+                        "operator": "LT",
+                        "value": 10
+                    }
+                ]
+            },{
+                "name": "Combined Average Read Quality",
+                "description": "Combined trimmed reads QC score is low.",
+                "FAIL": [
+                    {
+                        "key": "trimmedCombinedAvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read1 Quality",
+                "description": "Trimmed read1 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead1AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },{
+                "name": "Read2 Quality",
+                "description": "Trimmed read2 QC score is low.",
+                "WARN": [
+                    {
+                        "key": "trimmedRead2AvgQC",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+            },
+            {
+                "name": "300 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "300 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 135
+                    }
+                ]
+            },
+            {
+                "name": "500 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "500 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 225
+                    }
+                ]
+            },
+            {
+                "name": "600 Cycle Kit Length",
+                "description": "Average trimmed read length is low for this kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "600 cycle kit"
+                    },
+                    {
+                        "key": "trimmedCombinedReadMeanLength",
+                        "operator": "LT",
+                        "value": 270
+                    }
+                ]
+            },
+            {
+                "name": "Non Standard Kit",
+                "description": "Cannot infer as 300, 500, or 600 cycle kit.",
+                "WARN": [
+                    {
+                        "key": "inferredKit",
+                        "operator": "EQ",
+                        "value": "Non Standard"
+                    }
+                ]
+            }
+        ]
+        
+    },
+    "correctedAssembly": {
+        "SALMONELLA": [
+            {
+                "name": "N50",
+                "description": "n50 is low.",
+                "FAIL": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 100000
+                    }
+                ]
+            },{
+                "name": "Coverage",
+                "description": "Assembly coverage is not within range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedAverageDepth",
+                        "operator": "LT",
+                        "value": 30
+                    }
+                ]
+
+            },{
+                "name": "Assembly Length",
+                "description": "Assembly length outside of expected range unless sample is of the subspecies IIIb or the strain Paratyphi B var. L(+) tartrate+",
+                "FAIL": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "NW",
+                        "value": [4300000, 6200000]
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "W",
+                        "value": [5700000, 6200000]
+                    }
+                ]
+            },{
+                "name": "Number of Contigs",
+                "description": "Number of contigs greater than expected.",
+                "WARN": [
+                    {
+                        "key": "cleanedNContigs",
+                        "operator": "GT",
+                        "value": 400
+                    }
+                ]
+            }
+        ],
+        "LISTERIA": [
+            {
+                "name": "N50",
+                "description": "n50 is low.",
+                "FAIL": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 200000
+                    }
+                ]
+            },{
+                "name": "Coverage",
+                "description": "Assembly coverage is not within range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedAverageDepth",
+                        "operator": "LT",
+                        "value": 20
+                    }
+                ]
+            },{
+                "name": "Assembly Length",
+                "description": "Assembly length outside of expected range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "NW",
+                        "value": [2800000, 3199999]
+                    }
+                ]
+            },{
+                "name": "Number of Contigs",
+                "description": "Number of contigs greater than expected.",
+                "WARN": [
+                    {
+                        "key": "cleanedNContigs",
+                        "operator": "GT",
+                        "value": 100
+                    }
+                ]
+            }
+        ],
+        "CAMPYLOBACTER": [
+            {
+                "name": "N50",
+                "description": "n50 is low.",
+                "FAIL": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 75000
+                    }
+                ]
+            },{
+                "name": "Coverage",
+                "description": "Assembly coverage is not within range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedAverageDepth",
+                        "operator": "LT",
+                        "value": 20
+                    }
+                ]
+            },{
+                "name": "Assembly Length",
+                "description": "Assembly length outside of expected range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "NW",
+                        "value": [1400000, 2200000]
+                    }
+                ]
+            },{
+                "name": "Number of Contigs",
+                "description": "Number of contigs greater than expected.",
+                "WARN": [
+                    {
+                        "key": "cleanedNContigs",
+                        "operator": "GT",
+                        "value": 400
+                    }
+                ]
+            }
+        ],
+        "ESCHERICHIA": [
+            {
+                "name": "N50",
+                "description": "n50 is low.",
+                "FAIL": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 75000
+                    }
+                ]
+            },{
+                "name": "Coverage",
+                "description": "Assembly coverage is not within range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedAverageDepth",
+                        "operator": "LT",
+                        "value": 40
+                    }
+                ]
+
+            },{
+                "name": "Assembly Length",
+                "description": "Assembly length outside of expected range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "NW",
+                        "value": [4200000, 5999999]
+                    }
+                ]
+            },{
+                "name": "Number of Contigs",
+                "description": "Number of contigs greater than expected.",
+                "WARN": [
+                    {
+                        "key": "cleanedNContigs",
+                        "operator": "GT",
+                        "value": 500
+                    }
+                ]
+            }
+        ],
+        "VIBRIO": [
+            {
+                "name": "N50",
+                "description": "n50 is low.",
+                "FAIL": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 100000
+                    }
+                ]
+            },{
+                "name": "Coverage",
+                "description": "Assembly coverage is not within range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedAverageDepth",
+                        "operator": "LT",
+                        "value": 40
+                    }
+                ]
+
+            },{
+                "name": "Assembly Length",
+                "description": "Assembly length outside of expected range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "NW",
+                        "value": [3800000, 5500000]
+                    }
+                ]
+            },{
+                "name": "Number of Contigs",
+                "description": "Number of contigs greater than expected.",
+                "WARN": [
+                    {
+                        "key": "cleanedNContigs",
+                        "operator": "GT",
+                        "value": 300
+                    }
+                ]
+            }
+        ],
+        "CRONOBACTER": [
+            {
+                "name": "N50",
+                "description": "n50 is low.",
+                "FAIL": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 75000
+                    }
+                ]
+            },{
+                "name": "Coverage",
+                "description": "Assembly coverage is not within range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedAverageDepth",
+                        "operator": "LT",
+                        "value": 40
+                    }
+                ]
+
+            },{
+                "name": "Assembly Length",
+                "description": "Assembly length outside of expected range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "NW",
+                        "value": [4000000, 4900000]
+                    }
+                ]
+            },{
+                "name": "Number of Contigs",
+                "description": "Number of contigs greater than expected.",
+                "WARN": [
+                    {
+                        "key": "cleanedNContigs",
+                        "operator": "GT",
+                        "value": 400
+                    }
+                ]
+            }
+        ],
+        "CLOSTRIDIUM": [
+            {
+                "name": "N50",
+                "description": "n50 is low.",
+                "FAIL": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 100000
+                    }
+                ]
+            },{
+                "name": "Coverage",
+                "description": "Assembly coverage is not within range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedAverageDepth",
+                        "operator": "LT",
+                        "value": 40
+                    }
+                ]
+
+            },{
+                "name": "Assembly Length",
+                "description": "Assembly length outside of expected range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "NW",
+                        "value": [3300000, 4700000]
+                    }
+                ], 
+                "WARN": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "NW",
+                        "value": [3500000, 4500000]
+                    }
+                ]                
+            },{
+                "name": "Number of Contigs",
+                "description": "Number of contigs greater than expected.",
+                "WARN": [
+                    {
+                        "key": "cleanedNContigs",
+                        "operator": "GT",
+                        "value": 400
+                    }
+                ]
+            }
+        ],
+        "GRIMONTIA": [
+            {
+                "name": "N50",
+                "description": "n50 is low.",
+                "FAIL": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 100000
+                    }
+                ]
+            },{
+                "name": "Coverage",
+                "description": "Assembly coverage is not within range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedAverageDepth",
+                        "operator": "LT",
+                        "value": 40
+                    }
+                ]
+
+            },{
+                "name": "Assembly Length",
+                "description": "Assembly length outside of expected range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "NW",
+                        "value": [3800000, 4500000]
+                    }
+                ]               
+            },{
+                "name": "Number of Contigs",
+                "description": "Number of contigs greater than expected.",
+                "WARN": [
+                    {
+                        "key": "cleanedNContigs",
+                        "operator": "GT",
+                        "value": 400
+                    }
+                ]
+            }
+        ],
+        "PHOTOBACTERIUM": [
+            {
+                "name": "N50",
+                "description": "n50 is low.",
+                "FAIL": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 100000
+                    }
+                ]
+            },{
+                "name": "Coverage",
+                "description": "Assembly coverage is not within range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedAverageDepth",
+                        "operator": "LT",
+                        "value": 40
+                    }
+                ]
+
+            },{
+                "name": "Assembly Length",
+                "description": "Assembly length outside of expected range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "NW",
+                        "value": [3800000, 4500000]
+                    }
+                ]               
+            },{
+                "name": "Number of Contigs",
+                "description": "Number of contigs greater than expected.",
+                "WARN": [
+                    {
+                        "key": "cleanedNContigs",
+                        "operator": "GT",
+                        "value": 400
+                    }
+                ]
+            }
+        ],
+        "YERSINIA": [
+            {
+                "name": "N50",
+                "description": "n50 is low.",
+                "FAIL": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "cleanedN50",
+                        "operator": "LT",
+                        "value": 50000
+                    }
+                ]
+            },{
+                "name": "Coverage",
+                "description": "Assembly coverage is not within range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedAverageDepth",
+                        "operator": "LT",
+                        "value": 40
+                    }
+                ]
+
+            },{
+                "name": "Assembly Length",
+                "description": "Assembly length outside of expected range.",
+                "FAIL": [
+                    {
+                        "key": "cleanedLength",
+                        "operator": "NW",
+                        "value": [4400000, 5400000]
+                    }
+                ]               
+            },{
+                "name": "Number of Contigs",
+                "description": "Number of contigs greater than expected.",
+                "WARN": [
+                    {
+                        "key": "cleanedNContigs",
+                        "operator": "GT",
+                        "value": 400
+                    }
+                ]
+            }
+        ]
+    },
+    "rawAssembly": {
+        "SALMONELLA": [
+           {
+                "name": "Number of Contigs",
+                "description": "Number of contigs lower than expected.",
+                "WARN": [
+                    {
+                        "key": "nContigs",
+                        "operator": "LT",
+                        "value": 1
+                    }
+                ]
+            }
+        ],
+        "LISTERIA": [
+            {
+                 "name": "Number of Contigs",
+                 "description": "Number of contigs lower than expected.",
+                 "WARN": [
+                     {
+                         "key": "nContigs",
+                         "operator": "LT",
+                         "value": 1
+                     }
+                 ]
+             }
+         ],
+         "CAMPYLOBACTER": [
+            {
+                 "name": "Number of Contigs",
+                 "description": "Number of contigs lower than expected.",
+                 "WARN": [
+                     {
+                         "key": "nContigs",
+                         "operator": "LT",
+                         "value": 1
+                     }
+                 ]
+             }
+         ],
+         "ESCHERICHIA": [
+            {
+                 "name": "Number of Contigs",
+                 "description": "Number of contigs lower than expected.",
+                 "WARN": [
+                     {
+                         "key": "nContigs",
+                         "operator": "LT",
+                         "value": 1
+                     }
+                 ]
+             }
+         ],
+         "VIBRIO": [
+            {
+                 "name": "Number of Contigs",
+                 "description": "Number of contigs lower than expected.",
+                 "WARN": [
+                     {
+                         "key": "nContigs",
+                         "operator": "LT",
+                         "value": 1
+                     }
+                 ]
+             }
+         ],
+         "CRONOBACTER": [
+            {
+                 "name": "Number of Contigs",
+                 "description": "Number of contigs lower than expected.",
+                 "WARN": [
+                     {
+                         "key": "nContigs",
+                         "operator": "LT",
+                         "value": 1
+                     }
+                 ]
+             }
+         ], 
+         "CLOSTRIDIUM": [
+            {
+                 "name": "Number of Contigs",
+                 "description": "Number of contigs lower than expected.",
+                 "WARN": [
+                     {
+                         "key": "nContigs",
+                         "operator": "LT",
+                         "value": 1
+                     }
+                 ]
+             }
+        ],
+        "YERSINIA": [
+            {
+                 "name": "Number of Contigs",
+                 "description": "Number of contigs lower than expected.",
+                 "WARN": [
+                     {
+                         "key": "nContigs",
+                         "operator": "LT",
+                         "value": 1
+                     }
+                 ]
+             }
+         ],
+         "GRIMONTIA": [
+            {
+                 "name": "Number of Contigs",
+                 "description": "Number of contigs lower than expected.",
+                 "WARN": [
+                     {
+                         "key": "nContigs",
+                         "operator": "LT",
+                         "value": 1
+                     }
+                 ]
+             }
+         ],
+         "PHOTOBACTERIUM": [
+            {
+                 "name": "Number of Contigs",
+                 "description": "Number of contigs lower than expected.",
+                 "WARN": [
+                     {
+                         "key": "nContigs",
+                         "operator": "LT",
+                         "value": 1
+                     }
+                 ]
+             }
+         ]
+    },
+    "MIDAS": {
+        "DEFAULT": [
+            {
+                "name": "highCoverage",
+                "description": "The secondary coverage is too high.",
+                "FAIL": [
+                    {
+                        "key": "secondaryCoverage",
+                        "operator": "NW",
+                        "value": [0,1]
+                    }
+                ],
+                "WARN": []
+            },
+            {
+                "name": "noPrimaryCoverage",
+                "description": "No genus found.",
+                "FAIL": [
+                    {
+                        "key": "primaryCoverage",
+                        "operator": "EQ",
+                        "value": 0
+                    }
+                ],
+                "WARN": []
+            }
+        ]
+    },
+    "ANI": {
+        "SALM": [
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 70
+                    }
+                ]
+            },{
+                "name": "lowANI",
+                "description": "No match found above ANI threshold",
+                "FAIL": [
+                    {
+                        "key": "ANI_Score",
+                        "operator": "LT",
+                        "value": 92
+                    }
+                ]
+            },{
+                "name": "noMatch",
+                "description": "No ANI match found",
+                "FAIL": [
+                    {
+                        "key": "Genus",
+                        "operator": "EQ",
+                        "value": ""
+                    }
+                ]
+            },{
+                "name": "lowDiscrimination",
+                "description": "Best match is not sufficiently better than second best match to discriminate",
+                "WARN": [
+                    {
+                        "key": "Discrimination",
+                        "operator": "LT",
+                        "value": 2.0
+                    }
+                ]
+            }
+        ],
+        "STEC": [
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 70
+                    }
+                ]
+            },{
+                "name": "lowANI",
+                "description": "No match found above ANI threshold",
+                "FAIL": [
+                    {
+                        "key": "ANI_Score",
+                        "operator": "LT",
+                        "value": 95
+                    }
+                ]
+            },{
+                "name": "noMatch",
+                "description": "No ANI match found",
+                "FAIL": [
+                    {
+                        "key": "Genus",
+                        "operator": "EQ",
+                        "value": ""
+                    }
+                ]
+            }
+        ],
+        "LISTERIA": [
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 75
+                    }
+                ]
+            },{
+                "name": "lowANI",
+                "description": "No match found above ANI threshold",
+                "FAIL": [
+                    {
+                        "key": "ANI_Score",
+                        "operator": "LT",
+                        "value": 92
+                    }
+                ]
+            },{
+                "name": "noMatch",
+                "description": "No ANI match found",
+                "FAIL": [
+                    {
+                        "key": "Genus",
+                        "operator": "EQ",
+                        "value": ""
+                    }
+                ]
+            }
+        ],
+        "VIBRIO": [
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 70
+                    }
+                ]
+            },{
+                "name": "lowANI",
+                "description": "No match found above ANI threshold",
+                "FAIL": [
+                    {
+                        "key": "ANI_Score",
+                        "operator": "LT",
+                        "value": 95
+                    }
+                ]
+            },{
+                "name": "noMatch",
+                "description": "No ANI match found",
+                "FAIL": [
+                    {
+                        "key": "Genus",
+                        "operator": "EQ",
+                        "value": ""
+                    }
+                ]
+            }
+        ],
+        "CAMPY": [
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 70
+                    }
+                ]
+            },{
+                "name": "lowANI",
+                "description": "No match found above ANI threshold",
+                "FAIL": [
+                    {
+                        "key": "ANI_Score",
+                        "operator": "LT",
+                        "value": 92
+                    }
+                ]
+            },{
+                "name": "noMatch",
+                "description": "No ANI match found",
+                "FAIL": [
+                    {
+                        "key": "Genus",
+                        "operator": "EQ",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 70
+                    }
+                ]
+            }
+        ],
+        "CRONO": [
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 70
+                    }
+                ]
+            },{
+                "name": "lowANI",
+                "description": "No match found above ANI threshold",
+                "FAIL": [
+                    {
+                        "key": "ANI_Score",
+                        "operator": "LT",
+                        "value": 92
+                    }
+                ]
+            },{
+                "name": "noMatch",
+                "description": "No ANI match found",
+                "FAIL": [
+                    {
+                        "key": "Genus",
+                        "operator": "EQ",
+                        "value": ""
+                    }
+                ]
+            },{
+                "name": "lowDiscrimination",
+                "description": "Best match is not sufficiently better than second best match to discriminate",
+                "WARN": [
+                    {
+                        "key": "Discrimination",
+                        "operator": "LT",
+                        "value": 2.0
+                    }
+                ]
+            }
+        ],
+        "CBOT": [
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 70
+                    }
+                ]
+            },{
+                "name": "lowANI",
+                "description": "No match found above ANI threshold",
+                "FAIL": [
+                    {
+                        "key": "ANI_Score",
+                        "operator": "LT",
+                        "value": 92
+                    }
+                ]
+            },{
+                "name": "noMatch",
+                "description": "No ANI match found",
+                "FAIL": [
+                    {
+                        "key": "Genus",
+                        "operator": "EQ",
+                        "value": ""
+                    }
+                ]
+            },{
+                "name": "lowDiscrimination",
+                "description": "Best match is not sufficiently better than second best match to discriminate",
+                "WARN": [
+                    {
+                        "key": "Discrimination",
+                        "operator": "LT",
+                        "value": 2.0
+                    }
+                ]
+            }
+        ],
+        "YERSINIA": [
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 70
+                    }
+                ]
+            },{
+                "name": "lowANI",
+                "description": "No match found above ANI threshold",
+                "FAIL": [
+                    {
+                        "key": "ANI_Score",
+                        "operator": "LT",
+                        "value": 92
+                    }
+                ]
+            },{
+                "name": "noMatch",
+                "description": "No ANI match found",
+                "FAIL": [
+                    {
+                        "key": "Genus",
+                        "operator": "EQ",
+                        "value": ""
+                    }
+                ]
+            },{
+                "name": "lowDiscrimination",
+                "description": "Best match is not sufficiently better than second best match to discriminate",
+                "WARN": [
+                    {
+                        "key": "Discrimination",
+                        "operator": "LT",
+                        "value": 2.0
+                    }
+                ]
+            }
+        ],
+        "GRIMONTIA": [
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 70
+                    }
+                ]
+            },{
+                "name": "lowANI",
+                "description": "No match found above ANI threshold",
+                "FAIL": [
+                    {
+                        "key": "ANI_Score",
+                        "operator": "LT",
+                        "value": 95
+                    }
+                ]
+            },{
+                "name": "noMatch",
+                "description": "No ANI match found",
+                "FAIL": [
+                    {
+                        "key": "Genus",
+                        "operator": "EQ",
+                        "value": ""
+                    }
+                ]
+            },{
+                "name": "lowDiscrimination",
+                "description": "Best match is not sufficiently better than second best match to discriminate",
+                "WARN": [
+                    {
+                        "key": "Discrimination",
+                        "operator": "LT",
+                        "value": 2.0
+                    }
+                ]
+            }
+        ],
+        "PHOTOBACTERIUM": [
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 70
+                    }
+                ]
+            },{
+                "name": "lowANI",
+                "description": "No match found above ANI threshold",
+                "FAIL": [
+                    {
+                        "key": "ANI_Score",
+                        "operator": "LT",
+                        "value": 95
+                    }
+                ]
+            },{
+                "name": "noMatch",
+                "description": "No ANI match found",
+                "FAIL": [
+                    {
+                        "key": "Genus",
+                        "operator": "EQ",
+                        "value": ""
+                    }
+                ]
+            },{
+                "name": "lowDiscrimination",
+                "description": "Best match is not sufficiently better than second best match to discriminate",
+                "WARN": [
+                    {
+                        "key": "Discrimination",
+                        "operator": "LT",
+                        "value": 2.0
+                    }
+                ]
+            }
+        ]
+    },
+    "ORG_ANI": {
+        "SALM": [
+            {
+                "name": "lowPercentAligned",
+                "description": "No match found above Percent aligned threshold",
+                "FAIL": [
+                    {
+                        "key": "Percent_Aligned",
+                        "operator": "LT",
+                        "value": 70
+                    }
+                ]
+            },{
+                "name": "lowANI",
+                "description": "No match found above ANI threshold",
+                "FAIL": [
+                    {
+                        "key": "ANI_Score",
+                        "operator": "LT",
+                        "value": 98
+                    }
+                ]
+            },{
+                "name": "noMatch",
+                "description": "No ANI match found",
+                "FAIL": [
+                    {
+                        "key": "Genus",
+                        "operator": "EQ",
+                        "value": ""
+                    }
+                ]
+            },{
+                "name": "lowDiscrimination",
+                "description": "Best match is not sufficiently better than second best match to discriminate",
+                "WARN": [
+                    {
+                        "key": "Discrimination",
+                        "operator": "LT",
+                        "value": 2.0
+                    }
+                ]
+            }
+        ]
+    },
+    "AlleleCalling": {
+        "SALM": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 85
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "W",
+                        "value": [85,94]
+                    }
+                ]
+            }
+        ], 
+        "STEC": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 85
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "W",
+                        "value": [85,94]
+                    }
+                ]
+            }
+        ], 
+        "LISTERIA_I": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 95
+                    }
+                ]
+            }
+        ],
+        "LISTERIA_II": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 95
+                    }
+                ]
+            }
+        ],
+        "LISTERIA_III": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 85
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "W",
+                        "value": [85,94]
+                    }
+                ]
+            }
+        ],
+        "LISTERIA_IV": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 85
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "W",
+                        "value": [85,94]
+                    }
+                ]
+            }
+        ],
+        "LISTERIA_": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 85
+                    }
+                ]
+            }
+        ],
+        "CAMPY JEJUNI":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 85
+                    }
+                ]
+            },
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "W",
+                        "value": [85,94]
+                    }
+                ]
+            }
+        ],
+        "CAMPY COLI":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 75
+                    }
+                ]
+            }
+        ],
+        "CAMPY FETUS":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 13
+                    }
+                ]
+            }
+        ],
+        "CAMPY LARI":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 50
+                    }
+                ]
+            }
+        ],
+        "CAMPY UPSALIENSIS":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 60
+                    }
+                ]
+            }
+        ],
+        "CAMPY":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 13
+                    }
+                ]
+            }
+        ],
+        "VIBRIO":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 95
+                    }
+                ]
+            }
+        ],
+        "VIBRIO VULNIFICUS":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ]
+            }
+        ],
+        "CRONO":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 85
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "W",
+                        "value": [85,94]
+                    }
+                ]
+            }
+        ],
+        "CBOT":[
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 0
+                    }
+                ]
+            }
+        ],
+        "YERSINIA": [
+            {
+                "name": "Core Loci Percentage",
+                "description": "Core percentage is low, no allele code will be assigned.",
+                "FAIL": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "LT",
+                        "value": 85
+                    }
+                ],
+                "WARN": [
+                    {
+                        "key": "corePercentage",
+                        "operator": "W",
+                        "value": [85,94]
+                    }
+                ]
+            }
+        ]
+    },
+    "mlstTaxonomy": {
+        "DEFAULT": [
+            {
+                "name": "AlleleIssues",
+                "description": "There are allele issues present.",
+                "WARN": [
+                    {
+                        "key": "totalAlleleIssues",
+                        "operator": "GT",
+                        "value": 0
+                    }
+                ]
+            }
+        ]
+    }
+}

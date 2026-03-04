@@ -1,0 +1,58 @@
+{
+    "SALMONELLA": {
+        "DEFAULT": [
+            "senterica_achtman_2"
+        ]
+    },
+    "CAMPYLOBACTER": {
+        "FETUS": [
+            "campylobacter_nonjejuni_9"
+        ],
+        "JEJUNI": [
+            "campylobacter"
+        ],
+        "LARI": [
+            "campylobacter_nonjejuni_3"
+        ],
+        "UPSALIENSIS": [
+            "campylobacter_nonjejuni_4"
+        ]
+    },
+    "LISTERIA": {
+        "DEFAULT": [
+            "listeria_2"
+        ]
+    },
+    "ESCHERICHIA": {
+        "DEFAULT": [
+            "ecoli_achtman_4",
+            "ecoli"
+        ]
+    },
+    "VIBRIO": {
+        "PARAHAEMOLYTICUS": [
+            "vparahaemolyticus"
+        ],
+        "CHOLERAE": [
+            "vcholerae"
+        ],
+        "VULNIFICUS": [
+            "vvulnificus"
+        ]
+    },
+    "CRONOBACTER": {
+        "DEFAULT": [
+            "cronobacter"
+        ]
+    },
+    "CLOSTRIDIUM": {
+        "DEFAULT": [
+            "cbotulinum"
+        ]
+    },
+    "YERSINIA": {
+        "DEFAULT": [
+            "ypseudotuberculosis_achtman_3"
+        ]
+    }
+}

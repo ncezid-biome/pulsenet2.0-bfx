@@ -1,0 +1,23 @@
+{
+    "SALMONELLA": {
+        "min_base_depth": 10,
+        "min_depth": 15,
+        "min_depth_percent": 25,
+        "min_gc_content": 5,
+        "min_contig_length": 500
+    },
+    "ESCHERICHIA": {
+        "min_base_depth": 10,
+        "min_depth": 15,
+        "min_depth_percent": 25,
+        "min_gc_content": 5,
+        "min_contig_length": 500
+    },
+    "DEFAULT": {
+        "min_base_depth": 10,
+        "min_depth": 15,
+        "min_depth_percent": 25,
+        "min_gc_content": 5,
+        "min_contig_length": 500
+    }
+}

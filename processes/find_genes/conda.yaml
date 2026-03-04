@@ -1,0 +1,7 @@
+channels:
+  - bioconda
+  - anaconda
+dependencies:
+  - ncbi-amrfinderplus=4.0.15
+  - python=3.11
+  - chardet

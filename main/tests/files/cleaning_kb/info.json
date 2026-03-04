@@ -1,0 +1,7 @@
+{
+    "meta": {
+        "name": "cleaning",
+        "version": "1.0.0"
+    },
+    "settings": "cleaning_settings.json"
+}

@@ -1,0 +1,17 @@
+channels:
+  - bioconda
+dependencies:
+  - mlst==2.11
+  - python=3.7
+  - bwa==0.7.12
+  - biopython==1.73
+  - samtools==1.6
+  - blast==2.15.0
+  - bedtools==2.17.0
+  - salmid==0.1.23
+  - stringmlst==0.6.3
+  - bioconda::sra-tools==2.8
+  - spades==3.15.5
+  - pip:
+      - biopython==1.73
+      - "git+https://github.com/denglab/SeqSero2s.git@27f18b6b3bfa350c0ab04cee1b153a6e5ad70b15"

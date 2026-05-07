@@ -1,0 +1,83 @@
+file	genus	species	subspecies	serotype
+KF1.fasta	Escherichia	albertii		
+ATCC_35469.fasta	Escherichia	fergusonii		
+B4103-1_Escherichia_coli_O27_H7.fsa	Escherichia	coli		
+D0133-M947-15-030-Aug27.fasta	Campylobacter	jejuni	jejuni	
+NC_009707.Cdoylei.fasta	Campylobacter	jejuni	doylei	
+2013D-9606-M3235-15-038.fasta	Campylobacter	coli		
+82-40.fasta	Campylobacter	fetus	fetus	
+03-427.fasta	Campylobacter	fetus	testudinum	
+97-608_C_fetus_venerealis.fas	Campylobacter	fetus	venerealis	
+C_hyointestinalis_hyointestinalis_4092_final.fasta	Campylobacter	hyointestinalis		
+RM2100.fasta	Campylobacter	lari	lari	
+LMG11760.fasta	Campylobacter	lari	concheus	
+D1914-M347-15-037.fasta	Campylobacter	upsaliensis		
+2014D-0028_Campylobacter_coli.fasta	Campylobacter	coli		
+G4599.fasta	Listeria	monocytogenes	I	1/2b
+2011L-2626.fasta	Listeria	monocytogenes	II	1/2a
+2014L-6393.fasta	Listeria	monocytogenes	III	4b
+J0099.fasta	Listeria	monocytogenes	III	4c
+2014L-6256.fasta	Listeria	monocytogenes	IV	4b
+H0996.fasta	Listeria	innocua		
+2010L-2059.fasta	Listeria	innocua		
+2012L-5524.fasta	Listeria	marthii		
+F5761.fasta	Listeria	seeligeri		
+SLCC5334.fasta	Listeria	welshimeri		
+PAM55.fasta	Listeria	ivanovii		
+F4080_ROA7576A1.032077.circlator.quiver.032552.fasta	Listeria	seeligeri		
+I_SalJFX2010K2370c1Infantis.fa	Salmonella	enterica		
+V_04_0440_GLE7360A3.031221.circlator.quiver.031490.fasta	Salmonella	bongori		
+08-2459_SAN5292A5_Vibrio_metoecus.fasta	Vibrio	metoecus		
+08-2462_SAN4854A50_Vibrio_navarrensis.fasta	Vibrio	navarrensis	L	I
+2009V-1035_SAN4854A22_Vibrio_vulnificus.fasta	Vibrio	vulnificus	VV	II*
+2010EL-1786_SAN4854A5_Vibrio_cholerae.fasta	Vibrio	cholerae	O1:Ogawa:El	Tor
+2011V-1073_SAN5445A4_Vibrio_mimicus.fasta	Vibrio	mimicus		
+2011V-1164_SAN5445A8_Vibrio_harveyi.fasta	Vibrio	harveyi		
+2011V-1169_SAN4854A53_Vibrio_metoecus.fasta	Vibrio	metoecus		
+2012AW-0154_SAN5292A14_Vibrio_parahaemolyticus.fasta	Vibrio	parahaemolyticus	O3:K6	
+2012V-1020_SAN4854A41_Vibrio_metschnikovii.fasta	Vibrio	metschnikovii
+2521_89_SAN4854A10_Vibrio_tarriae.fasta	Vibrio	tarriae
+2012V-1072_SAN4854A69_Photobacterium_damselae.fasta	Photobacterium	damselae		
+2013V-1029_SAN5292A8_Grimontia_hollisae.fasta	Grimontia	hollisae		
+2013V-1049_SAN4854A58_Vibrio_fluvialis.fasta	Vibrio	fluvialis		
+2013V-1302_SAN4854A28_Vibrio_alginolyticus.fasta	Vibrio	alginolyticus		
+2142-77_SAN5292A3_Vibrio_vulnificus.fasta	Vibrio	vulnificus	VV	I
+2409-02_SAN4854A36_Vibrio_cincinnatiensis.fasta	Vibrio	cincinnatiensis		
+2419-04_SAN4854A64_Vibrio_furnissii.fasta	Vibrio	furnissii		
+2423-01_SAN4854A48_Vibrio_cidicii.fasta	Vibrio	cidicii	
+O75TS_SAN5445A2_Vibrio_paracholerae.fasta	Vibrio	paracholerae
+LMG26250_SAN7375A23_Cronobacter_condimenti.fasta	Cronobacter	condimenti		
+LMG23823_IMY8710A2_Cronobacter_dublinensis.fasta	Cronobacter	dublinensis		
+LMG23826_SAN7375A26_Cronobacter_malonaticus.fasta	Cronobacter	malonaticus		
+ATCC51329_ROA7310A22_Cronobacter_muytjensii.fasta	Cronobacter	muytjensii		
+ATCC29544_ROA7310A23_Cronobacter_sakazakii.fasta	Cronobacter	sakazakii		
+LMG23827_IMY9602A1_Cronobacter_turicensis.fasta	Cronobacter	turicensis		
+LMG26249_ROA7310A20_Cronobacter_universalis.fasta	Cronobacter	universalis		
+ATCC35236_IMY8710A33_Yersinia_aldovae.fasta	Yersinia	aldovae		
+ATCC43970_ROA7310A6_Yersinia_bercovieri.fasta	Yersinia	bercovieri		
+2010N-4013_SAN6306A20_Yersinia_enterocolitica.fasta	Yersinia	enterocolitica		
+2014N-4005_SAN6306A18_Yersinia_enterocolitica.fasta	Yersinia	enterocolitica		
+ATCC33642_SAN7569A7_Yersinia_frederiksenii.fasta	Yersinia	frederiksenii		
+ATCC33646_ROA7310A13_Yersinia_intermedia.fasta	Yersinia	intermedia		
+ATCC33637_SAN7569A11_Yersinia_kristensenii.fasta	Yersinia	kristensenii		
+ATCC33638_SAN7569A12_Yersinia_kristensenii.fasta	Yersinia	kristensenii		
+2017N-4002_IMY8710A53_Yersinia_massiliensis.fasta	Yersinia	massiliensis		
+2469-87_IMY8710A54_Yersinia_mollaretii.fasta	Yersinia	mollaretii		
+ATCC43969_ROA7310A14_Yersinia_mollaretii.fasta	Yersinia	mollaretii		
+2014N-4030_SAN6306A14_Yersinia_pseudotuberculosis.fasta	Yersinia	pseudotuberculosis		
+ATCC43380_ROA7310A18_Yersinia_rohdei.fasta	Yersinia	rohdei		
+2013N-4022_M947-21-020_Yersinia_species.fasta	Yersinia	species	frederiksenii-group	
+CDC69094_GCA_001879605.1_Clostridium_botulinum.fasta	Clostridium 	botulinum		A(B)
+Osaka05_GCA_000503815.1_Clostridium_botulinum.fasta	Clostridium 	botulinum		B
+08_0466_PB_IIa.fasta	Salmonella	enterica	II	
+2011K_1440_PB_IIb.fasta	Salmonella	enterica	II	
+2014K_1020_PB_IIIa.fasta	Salmonella	enterica	IIIa	
+2015K_1072_PB_IIIb.fasta	Salmonella	enterica	IIIb	
+62_3163_PB_VIII.fasta	Salmonella	enterica	II	
+64_2439_PB_VII.fasta	Salmonella	enterica	IV	
+68_4603_PB_VI.fasta	Salmonella	enterica	VI	
+85_0120_PB_IX.fasta	Salmonella	enterica	IV	
+94_0093_PB_X.fasta	Salmonella	enterica	IV	
+SalTDH2012K0845.fasta	Salmonella	enterica	IV	
+NCTC-14359_Escherichia-ruysiae.fasta	Escherichia	ruysiae		
+HT073016_Escherichia-marmotae.fasta	Escherichia	marmotae		

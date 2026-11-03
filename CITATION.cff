@@ -1,0 +1,16 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Pulsenet 2.0 Bioinformatics Pipeline
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Sung
+    family-names: Im
+    email: wla9@cdc.gov
+    affiliation: CDC
+    orcid: 'https://orcid.org/0000-0002-5808-4492'
+  - {}
